@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 2019/7/16 18:29
  */
 @Component
-@FeignClient(value = "service-hi", fallback = ServiceFeignClientFallback.class)
-public interface ServiceFeignClient {
+@FeignClient(value = "service-hystrix", fallback = ServiceAFeignClientFallback.class)
+public interface ServiceAFeignClient {
 
-    @RequestMapping(value = "/hi")
-    String hi(@RequestParam("name") String name);
+    @RequestMapping(value = "/hello")
+    String hello(@RequestParam("name") String name);
 
 }

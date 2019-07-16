@@ -14,8 +14,16 @@ public class Controller {
     @Autowired
     ServiceFeignClient serviceFeignClient;
 
+    @Autowired
+    ServiceAFeignClient serviceAFeignClient;
+
     @RequestMapping("/hi")
     public String hi(@RequestParam String name) {
         return serviceFeignClient.hi(name);
+    }
+
+    @RequestMapping("/hello")
+    public String hello(@RequestParam String name) {
+        return serviceAFeignClient.hello(name);
     }
 }
