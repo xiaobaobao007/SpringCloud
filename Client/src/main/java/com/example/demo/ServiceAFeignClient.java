@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "service-hystrix", fallback = ServiceAFeignClientFallback.class)
 public interface ServiceAFeignClient {
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/hi")
     String hello(@RequestParam("name") String name);
 
 }

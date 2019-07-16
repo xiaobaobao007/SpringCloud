@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+server:
+  port: 8085
+spring:
+  application:
+    name: service-zull
+
+zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-hi
+    api-b:
+      path: /api-b/**
+      serviceId: service-hystrix
