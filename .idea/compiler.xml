@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Client" />
+        <module name="Config" />
         <module name="Eureka" />
         <module name="Server" />
         <module name="Server1" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Client" target="1.8" />
+      <module name="Config" target="1.8" />
       <module name="Eureka" target="1.8" />
       <module name="EurekaServerApplication" target="1.8" />
       <module name="Feign" target="1.8" />
@@ -29,6 +31,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Client" options="-parameters" />
+      <module name="Config" options="-parameters" />
       <module name="Eureka" options="-parameters" />
       <module name="EurekaServerApplication" options="-parameters" />
       <module name="Feign" options="-parameters" />
