@@ -11,7 +11,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xiaobaobao007/SpringCloud
-          search-paths: blob/master/Config/src/main/resources/
-          username:
-          password:
+          uri: https://github.com/xiaobaobao007/Config
+          search-paths: resouse

@@ -5,6 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
+
+/**
+ * http://localhost:8086/application/dev
+ */
+
 @SpringBootApplication
 @EnableConfigServer
 @EnableDiscoveryClient
