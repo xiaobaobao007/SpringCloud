@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Client" />
         <module name="Config" />
+        <module name="ConfigClient" />
         <module name="Eureka" />
         <module name="Server" />
         <module name="Server1" />
@@ -18,6 +19,7 @@
     <bytecodeTargetLevel>
       <module name="Client" target="1.8" />
       <module name="Config" target="1.8" />
+      <module name="ConfigClient" target="1.8" />
       <module name="Eureka" target="1.8" />
       <module name="EurekaServerApplication" target="1.8" />
       <module name="Feign" target="1.8" />
@@ -32,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Client" options="-parameters" />
       <module name="Config" options="-parameters" />
+      <module name="ConfigClient" options="-parameters" />
       <module name="Eureka" options="-parameters" />
       <module name="EurekaServerApplication" options="-parameters" />
       <module name="Feign" options="-parameters" />

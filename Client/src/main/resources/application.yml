@@ -7,6 +7,13 @@ eureka:
 spring:
   application:
     name: service-consumer-feign
+    cloud:
+      config:
+        discovery:
+          enabled: true
+          service-id: config-server
+        profile: dev
+        label: master
 feign:
   hystrix:
     enabled: true
