@@ -12,4 +12,4 @@ spring:
       server:
         git:
           uri: https://github.com/xiaobaobao007/Config
-          search-paths: resouse
+          search-paths: properties
